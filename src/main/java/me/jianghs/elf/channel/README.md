@@ -20,9 +20,10 @@ Channel下11个子接口。
                 - ScatteringByteChannel(I)：将通道数据读入多个buffer
             - WriteableByteChannel(I)
                 - ByteChannel(I)  
-                    - SeekableByteChannel(I)
+                    - SeekableByteChannel(I)            
                 - GatheringByteChannel(I)：将多个缓冲区数据写入通道
             - InterruptibleChannel(I)：通道可以以异步的方式中断或者关闭
-                - AbstractInterruptibleChannel(C)
+                - AbstractInterruptibleChannel(C)：提供可被中断的通道基本实现类
                     - FileChannel(C):操作文件，永远阻塞
+                    - SelectableChannel(C)
             
